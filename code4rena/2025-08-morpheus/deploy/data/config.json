@@ -1,0 +1,39 @@
+{
+  "chainsConfig": {
+    "senderChainId": 101,
+    "receiverChainId": 110
+  },
+  "pools": [
+    {
+      "payoutStart": 1714401160,
+      "decreaseInterval": 120,
+      "withdrawLockPeriod": 60,
+      "claimLockPeriod": 60,
+      "withdrawLockPeriodAfterStake": 60,
+      "initialReward": "3456000000000000000000",
+      "rewardDecrease": "592558728240000000",
+      "minimalStake": "10000000000000000",
+      "isPublic": true
+    }
+  ],
+  "L1": {
+    "stEth": "0x7EC3dda3e83dDD4b9f2cFCfF0A5213Bb8cf31b79",
+    "wStEth": "0x42BB446eAE6dca7723a9eBdb81EA88aFe77eF4B9"
+  },
+  "L2": {
+    "swapRouter": "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+    "nonfungiblePositionManager": "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
+    "wStEth": "0x4Cf928C827F15CbCC9A8781Eb9b2BC3CA52b2501"
+  },
+  "swapParams": {
+    "fee": 100,
+    "sqrtPriceLimitX96": 0
+  },
+  "arbitrumConfig": {
+    "arbitrumBridgeGatewayRouter": "0x72Ce9c846789fdB6fC1f34aC4AD25Dd9ef7031ef"
+  },
+  "lzConfig": {
+    "lzEndpointL1": "0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675",
+    "lzEndpointL2": "0x3c2269811836af69497E5F486A85D7316753cf62"
+  }
+}
