@@ -90,7 +90,7 @@ contract MergeTgt is IMerge, Ownable, ReentrancyGuard {
             revert MergeEnded();
         }
 
-        //~ @audit [H-1] MergeTgt has no handling if TGT is exceeded TGT_TO_EXCHANGE
+        //~ @audit-H MergeTgt has no handling if TGT is exceeded TGT_TO_EXCHANGE
         //~ mitigation：跟踪已存入的 TGT 数量来限制 TGT 的总存款量 或 将 totalTitnClaimable 限制为 TITN_ARB 值
         // tgt in, titn out
         uint256 titnOut = quoteTitn(amount);

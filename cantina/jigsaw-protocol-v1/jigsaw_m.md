@@ -74,7 +74,7 @@ Clones.cloneDeterministic -> `CREATE2`
   → 跟 nonce 无关，所以 re-org 后依然是 **同一个地址**。
 
 
-### re-org（回滚后区块重排
+### re-org（回滚后区块重排）
 
 **Re-org（Reorganization，链重组）**
 就是当区块链发现有更长的链出现时，会 **回滚** 当前的区块，然后切换到更长的链。

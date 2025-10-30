@@ -1,0 +1,123 @@
+{
+  "generic": {
+    "version": 1,
+    "connextDomains": [
+      { "chainId":1, "domainId": 6648936 },
+      { "chainId":42161, "domainId": 1634886255 },
+      { "chainId":10, "domainId": 10 },
+      { "chainId":8453, "domainId": 1650553709 }
+    ]
+  },
+  "networks": {
+     "linea": {
+      "ownership": "0xB819A871d20913839c37f316Dc914b0570bfc0eE",
+      "chainId": 59144,
+      "isHost": true,
+      "deployer": {
+        "owner": "0xB819A871d20913839c37f316Dc914b0570bfc0eE", 
+        "salt": "DeployerV1.0.4"
+      },
+      "oracle": {
+        "oracleType": "MixedPriceOracleV3",
+        "stalenessPeriod": 86400
+      },
+      "markets": [
+        {
+          "borrowCap": 0,
+          "borrowRateMaxMantissa": 5000000000000,
+          "collateralFactor": 0,
+          "decimals": 8,
+          "interestModel": {
+            "baseRate": 0,
+            "blocksPerYear": 31536000,
+            "jumpMultiplier": 95111963546,
+            "kink": 800000000000000000,
+            "multiplier": 1268391657,
+            "name": "mWBTC Interest Model"
+          },
+          "name": "mWBTC",
+          "supplyCap": 0,
+          "symbol": "mWBTC",
+          "underlying": "0x3aAB2285ddcDdaD8edf438C1bAB47e1a9D05a9b4"
+        }
+      ],
+      "roles": [],
+      "zkVerifier": {
+        "imageId": "0xd6d8248d1e786f29a2523024755fec278834380b35606307682d1411b65adba6",
+        "verifierAddress": "0x0b144e07a0826182b6b59788c34b32bfa86fb711"
+      },
+      "allowedChains": [
+        1,
+        8453
+      ]
+    },
+    "base": {
+      "ownership": "0xB819A871d20913839c37f316Dc914b0570bfc0eE",
+      "chainId": 8453,
+      "isHost": false,
+      "deployer": {
+        "owner": "0xB819A871d20913839c37f316Dc914b0570bfc0eE", 
+        "salt": "DeployerV1.0.3"
+      },
+      "markets": [
+        {
+          "borrowCap": 0,
+          "borrowRateMaxMantissa": 0,
+          "collateralFactor": 0,
+          "decimals": 0,
+          "interestModel": {
+            "baseRate": 0,
+            "blocksPerYear": 0,
+            "jumpMultiplier": 0,
+            "kink": 0,
+            "multiplier": 0,
+            "name": ""
+          },
+          "name": "mWBTC",
+          "supplyCap": 0,
+          "symbol": "mWBTC",
+          "underlying": "0x0555E30da8f98308EdB960aa94C0Db47230d2B9c"
+        }
+      ],
+      "roles": [],
+      "zkVerifier": {
+        "imageId": "0xd6d8248d1e786f29a2523024755fec278834380b35606307682d1411b65adba6",
+        "verifierAddress": "0x0b144e07a0826182b6b59788c34b32bfa86fb711"
+      }
+    },
+    "mainnet": {
+      "ownership": "0xB819A871d20913839c37f316Dc914b0570bfc0eE",
+      "chainId": 1,
+      "isHost": false,
+      "deployer": {
+        "owner": "0xB819A871d20913839c37f316Dc914b0570bfc0eE", 
+        "salt": "DeployerV1.0.3"
+      },
+      "markets": [
+        {
+          "borrowCap": 0,
+          "borrowRateMaxMantissa": 0,
+          "collateralFactor": 0,
+          "decimals": 0,
+          "interestModel": {
+            "baseRate": 0,
+            "blocksPerYear": 0,
+            "jumpMultiplier": 0,
+            "kink": 0,
+            "multiplier": 0,
+            "name": ""
+          },
+          "name": "mWBTC",
+          "supplyCap": 0,
+          "symbol": "mWBTC",
+          "underlying": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599"
+        }
+      ],
+      "roles": [],
+      "zkVerifier": {
+        "imageId": "0xd6d8248d1e786f29a2523024755fec278834380b35606307682d1411b65adba6",
+        "verifierAddress": "0x0b144e07a0826182b6b59788c34b32bfa86fb711"
+      }
+    }
+  }
+}
